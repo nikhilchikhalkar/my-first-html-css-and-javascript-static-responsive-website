@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+   
+}
+.logo{
+    width: 22%;
+    display: flex;
+    margin: 2px 2px;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 41%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50px ;
+}
+.nav-list{
+    list-style: none;
+    width: 70%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li{
+
+padding: 26px 30px ;
+
+}
+.nav-list li a{
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nav-list li a:hover{
+    text-decoration: none;
+    font-size: 19px;
+    color: rgb(195, 187, 187);
+    
+}
+.rightnav{
+    padding: 0px 22px;
+    width: 30%;
+    text-align: right;
+    
+    
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 9px;
+    border: 2px solid white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url('img/img1.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.firstsection{
+    height: 100vh;
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    height: 80%;
+}
+.firsthalf{
+width: 75%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+.secondhalf{
+width: 37%;
+}
+.secondhalf img{
+width: 70%;
+border: 4px solid white;
+border-radius: 150px;
+display: block;
+margin: auto;
+}
+
+.text-big{
+font-size: 41px;
+font-family: 'Ubuntu', sans-serif;
+}
+.text-small{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.btn{
+    padding: 8px 12px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 9px;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 19px;
+}
+.btn-sm{
+   padding: 5px 10px ;
+   vertical-align:middle;
+   font-size: 16px;
+}
+.btn-dark{
+    color: black;
+    border: 2px solid gray;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.left{
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0px 65px;
+}
+
+.thumbnail img {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    width: 250px;
+    margin-top: 19px;
+}
+.sectiontag{
+    padding: 16px 0px;
+}
+.contact{
+    height: 733px;
+    padding: 10px 0;
+}
+.text-center{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+
+}
+.text-footer{
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+
+
+}
+.form{
+    max-width: 62%;
+    margin: 12px auto;
+}
+.form-input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 4px;
+    margin: 14px 0px;
+    padding: 5px 3px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+
+}
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+.imgfluid{
+    height: 350px;
+    width: 350px;
+}
+@media screen and (max-width: 1192px) {
+
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+        height: 477px;
+        transition: all 0.7s ease-out;
+
+    }
+    .rightnav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: left;
+    }
+    .text-big{
+        text-align: left;
+    }
+    .btn{
+        text-align: center;
+    }
+    .paras{
+        padding: 0%;
+        text-align: right;
+    }
+    .nav-list li a:hover{
+        /* text-decoration: none; */
+        /* font-size: 19px; */
+        color: rgb(195, 187, 187);
+    }
+}
